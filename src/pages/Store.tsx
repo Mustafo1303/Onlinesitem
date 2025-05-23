@@ -1,4 +1,3 @@
-
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Home, Search, Filter, Cart, User, MapPin } from "lucide-react";
+import { Home, Search, Filter, ShoppingCart, User, MapPin } from "lucide-react";
 
 interface Product {
   id: number;
@@ -182,7 +181,7 @@ const Store = () => {
               <Sheet>
                 <SheetTrigger asChild>
                   <Button variant="outline" className="relative">
-                    <Cart className="w-5 h-5" />
+                    <ShoppingCart className="w-5 h-5" />
                     {cartItemsCount > 0 && (
                       <Badge className="absolute -top-2 -right-2 bg-uzbek-green text-white">
                         {cartItemsCount}
